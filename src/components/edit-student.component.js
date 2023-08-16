@@ -23,7 +23,7 @@ export default class EditStudent extends Component {
   }
 
   componentDidMount() {
-    axios.get('{{EDUCATIVE_LIVE_VM_URL}}:3000/students/edit-student/' + this.props.match.params.id)
+    axios.get('0.0.0.0:3000/students/edit-student/' + this.props.match.params.id)
       .then(res => {
         this.setState({
           name: res.data.name,
