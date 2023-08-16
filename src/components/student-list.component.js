@@ -14,7 +14,7 @@ export default class StudentList extends Component {
   }
 
   componentDidMount() {
-    axios.get('{{EDUCATIVE_LIVE_VM_URL}}:3000/students/')
+    axios.get('0.0.0.0:3000/students/')
       .then(res => {
         this.setState({
           students: res.data
